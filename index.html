@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seekers - Medellín</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Contenido principal -->
+    <header>
+        
+        <div class="header-left">
+            <h1>Turismo Sostenible en Medellín</h1>
+        </div>
+        <div class="header-right">
+            <p>El Índice Global de Turismo Sostenible de Medellín mide de forma integral el impacto del turismo en la ciudad, permitiendo decisiones estratégicas y acciones específicas para un desarrollo turístico respetuoso con el entorno y las comunidades locales.</p>
+        </div>
+    </header>
+    
+    <div class="blue-bar">
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="#">Indicador total de turismo sostenible</a></li>
+                <li><a href="#">Contribuye a añadir información de tu barrio o comuna</a></li>
+                <li><a href="#">Participa en proyectos de turismo sostenible en tu comuna</a></li>
+                <li><a href="#">¿Tienes un proyecto que promueva el turismo sostenible? Postúlalo aquí</a></li>
+            </ul>
+        </div>
+    </div>
+    
+  
+    <div class="container">
+        
+    
+        <div class="menu">
+            <div class="global-indicator">
+                <h2>Indicador Global:</h2>
+                <span class="indicator-value">85%</span>
+            </div>
+
+            <!-- Sección desplegable de Gestión de la Sostenibilidad Turística -->
+            <div class="section">
+                <h3 onclick="toggleSection(this)">Gestión de la Sostenibilidad Turística <span class="arrow">&#9662;</span></h3>
+                <div class="section-content">
+                    <ul>
+                        <li>
+                            <span>Planes de gestión de sostenibilidad</span>
+                            <span class="indicator-value blue">85%</span>
+                        </li>
+                        <li>
+                            <span>Gestión de Residuos</span>
+                            <span class="indicator-value green">78%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección desplegable de Conservación y Activación Cultural -->
+            <div class="section">
+                <h3 onclick="toggleSection(this)">Conservación y Activación Cultural <span class="arrow">&#9662;</span></h3>
+                <div class="section-content">
+                    <ul>
+                        <li>
+                            <span>Preservación Cultural y Activación Comunitaria</span>
+                            <span class="indicator-value yellow">65%</span>
+                        </li>
+                        <li>
+                            <span>Concentración de Equipamientos Culturales y Turísticos</span>
+                            <span class="indicator-value orange">45%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección desplegable de Conservación Ambiental y Uso de Recursos -->
+            <div class="section">
+                <h3 onclick="toggleSection(this)">Conservación Ambiental y Uso de Recursos <span class="arrow">&#9662;</span></h3>
+                <div class="section-content">
+                    <ul>
+                        <li>
+                            <span>Ambiental y Eficiencia en el Uso de Recursos</span>
+                            <span class="indicator-value green">80%</span>
+                        </li>
+                        <li>
+                            <span>Conservación ambiental</span>
+                            <span class="indicator-value red">25%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección desplegable de Desarrollo Socioeconómico y Economía Circular -->
+            <div class="section">
+                <h3 onclick="toggleSection(this)">Desarrollo Socioeconómico y Economía Circular <span class="arrow">&#9662;</span></h3>
+                <div class="section-content">
+                    <ul>
+                        <li>
+                            <span>Inclusión Social y Economía Circular</span>
+                            <span class="indicator-value yellow">60%</span>
+                        </li>
+                        <li>
+                            <span>Desarrollo Económico</span>
+                            <span class="indicator-value green">75%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mapa">
+            <iframe src="mapas/mapa_medellin.html"></iframe>
+        </div>
+        
+    
+    </div>
+
+    <script src="js/mapa.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Invertir el orden de los elementos */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos para el menú */
+.menu {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.global-indicator {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.global-indicator h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.indicator-value {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+/* Sección desplegable */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.section h3:hover {
+    background-color: #d0d0d0;
+}
+
+.section-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section-content ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.section.active h3 .arrow {
+    transform: rotate(180deg);
+}
+
+.section.active .section-content {
+    display: block;
+}
+
+/* Estilos para el mapa */
+.mapa {
+    width: 70%;
+    padding: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+span {
+    font-size: 15px; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Opcional: mejora la legibilidad al espaciar las líneas */
+    color: #333; /* Opcional: puedes ajustar el color del texto */
+}
+/* Estilos generales del header */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye los dos divs */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px;
+    background-color: #4CAF50; /* Fondo principal del header */
+    color: white;
+    border-radius: 0px; /* Bordes redondeados para el header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilos del contenedor izquierdo */
+.header-left {
+    flex: 1; /* El contenedor izquierdo ocupa el 50% del espacio */
+    background-color: #388E3C; /* Fondo verde más oscuro para el título */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 24px; /* Tamaño grande para el título */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos del contenedor derecho */
+.header-right {
+    flex: 2; /* El contenedor derecho ocupa más espacio */
+    background-color: #81C784; /* Fondo verde más claro para el párrafo */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: justify; /* Alineación del párrafo justificado */
+    margin-left: 20px; /* Separación entre los dos divs */
+}
+
+/* Estilo para el párrafo */
+.header-right p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    color: #333; /* Color de texto más oscuro para mayor legibilidad */
+}
+
+.blue-bar {
+    position: fixed; /* Posiciona el div de forma fija */
+    top: 0; /* Empuja la barra hacia la parte superior */
+    left: 0; /* Coloca la barra a la izquierda */
+    width: 50px; /* Establece el ancho de la barra (puedes ajustarlo) */
+    height: 100%; /* Hace que la barra ocupe toda la altura de la ventana */
+    background-color: #2196F3; /* Establece el color de fondo azul */
+    z-index: 9999; /* Asegura que la barra esté por encima del contenido */
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+  width: 230px;
+  background-color: #2196F3;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: -250px; /* Inicialmente fuera de la pantalla */
+  transition: 0.3s;
+  padding: 40px;
+}
+
+/* Estilos para el botón de menú */
+.menu-toggle {
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 25px;
+  position: fixed;
+  top: 50px;
+  left: 2px;
+  z-index: 1;
+}
+
+/* Estilo del contenido del menú */
+.sidebar-menu {
+  margin-top: 120px;
+}
+
+/* Estilos de los elementos del menú */
+.sidebar-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu ul li {
+  padding: 10px;
+  text-align: left;
+}
+
+.sidebar-menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.sidebar-menu ul li a:hover {
+  background-color: #575757;
+}
+
+/* Cuando el menú esté visible, se mueve hacia la derecha */
+.sidebar.active {
+  left: 0;
+}
+/* Estilos para la barra azul */
+
