@@ -22,7 +22,3 @@ Desarrollar un índice de sostenibilidad turística alineado con los **Objetivos
 3. **Conservación cultural y activación comunitaria**
 4. **Desarrollo socioeconómico**
 
-## Instalación
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/username/indice-turismo-sostenible-medellin.git
